@@ -1,45 +1,53 @@
-# code-sample-description
-This sample repo will show you how to easily do X with Nylas.
+# Email Threading
+
+This project will show you how to group emails threads using Ruby and Nylas.
 
 ## Setup
 
 ### System dependencies
 
-- Add System dependencies
+- Ruby 3.1.1 or greater
 
 ### Gather environment variables
 
-You'll need the following values from the Nylas Dashboard:
+You'll need the following values:
 
 ```text
-ACCESS_TOKEN = ""
 CLIENT_ID = ""
 CLIENT_SECRET = ""
+ACCESS_TOKEN = ""
 ```
 
-Add the above values to a `.env` file.
+Add the above values to a new `.env` file:
 
-The `.env` file is added to `.gitignore`. Ensure to store these values securely.
+```bash
+$ touch .env # Then add your env variables
+```
 
 ### Install dependencies
 
-[replace with install steps]
 ```bash
-$ npm i
+$ gem install dotenv
+$ gem install sinatra
+$ gem install sinatra-base
+$ gem install sinatra-contrib
+$ gem install nokogiri
+$ gem install nylas
+
 ```
 
 ## Usage
 
-The recommended way to use this sample is ...
+Clone the repository. Go to your terminal and type:
 
-You can also clone the repository ...
+```bash
+$ ruby EmailThreading.rb
+```
 
-You'll find more detailed instructions ...
+And go to `http://localhost:4567`
 
-## Get support
+Enter an email and you will see an accordion showing the email threads shared with that email.
 
-If you found a bug or want to suggest a new [feature/use case/sample], please file an issue.
+## Read the blog post
 
-## Learn more
-
-Visit our [Nylas documentation](https://developer.nylas.com/) to learn more.
+- [Grouping Email Threads with Ruby and Nylas](https://www.nylas.com/blog/grouping-email-threads-with-ruby-and-nylas-dev/)
