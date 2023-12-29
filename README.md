@@ -6,16 +6,15 @@ This project will show you how to group emails threads using Ruby and Nylas.
 
 ### System dependencies
 
-- Ruby 3.1.1 or greater
+- Ruby 3.2.2 or greater
 
 ### Gather environment variables
 
 You'll need the following values:
 
 ```text
-CLIENT_ID = ""
-CLIENT_SECRET = ""
-ACCESS_TOKEN = ""
+V3_TOKEN = ""
+GRANT_ID = ""
 ```
 
 Add the above values to a new `.env` file:
@@ -33,7 +32,7 @@ $ gem install sinatra-base
 $ gem install sinatra-contrib
 $ gem install nokogiri
 $ gem install nylas
-
+$ gem install puma
 ```
 
 ## Usage
@@ -47,7 +46,3 @@ $ ruby EmailThreading.rb
 And go to `http://localhost:4567`
 
 Enter an email and you will see an accordion showing the email threads shared with that email.
-
-## Read the blog post
-
-- [Grouping Email Threads with Ruby and Nylas](https://www.nylas.com/blog/grouping-email-threads-with-ruby-and-nylas-dev/)
